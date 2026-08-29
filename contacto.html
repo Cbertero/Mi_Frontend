@@ -150,12 +150,24 @@
                     <!-- BOTÓN -->
 
                     <button type="submit"
-                            class="btn btn-primary">
+                            class="btn btn-primary" onClick="mostrar()">
                         Enviar mensaje
                     </button>
 
 
                 </form>
+                <script>
+                    function mostrar() {
+                    let nom = document.getElementById('nombre').value;
+                    let co = document.getElementById('correo').value;
+                    let pe = document.getElementById('personaje').value;
+                    let me = document.getElementById('mensaje').value;
+                    alert('Ingresó el nombre:' + nom);
+                    alert('el correo:' + co);
+                    alert('su personaje:' + pe);
+                    alert('y el mensaje' + me);
+                            }
+    </script>
 
             </div>
 
